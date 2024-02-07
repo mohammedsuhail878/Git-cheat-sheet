@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>git commands</title>
+</head>
+<body style=" margin: 0; background: url('background.jpg') no-repeat center center fixed; background-size: cover;">
+<div>
+    <div style="text-align: center;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+         margin: auto;
+        width: 100%; /* Make it full width */
+        top: 0; /* Stick to the top */
+        z-index: 1000; ">
+        <label style=" font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: white" >
+            GIT CHEAT SHEET</label>
+    </div>
+
+    <div style="padding-top: 50px; width: 800px; padding-top: 50px; display: flex;">  <!-- div 1 -->
+        <ul style="color: #FFA500;">
+            <label style="font-size: 20px;">SETUP & INIT</label>
+            <li style="color: white; font-size: 20px;" type="none">$ git init</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git clone [url]</li> <br>
+        </ul>
+
+        <ul style="color: #FFA500;">
+            <label style="font-size: 20px;">STAGE & SNAPSHOT</label>
+            <li style="color: white; font-size: 20px;" type="none">$ git status</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git add [file_name]</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git add .</li>  
+            <li style="color: white; font-size: 20px;" type="none">$ git commit -m [commit message]</li> 
+        </ul> 
+         
+        <ul style="color: #FFA500;">
+            <label style="font-size: 20px;">REWRITE HISTORY</label>
+            <li style="color: white; font-size: 20px;" type="none">$ git reset --hard [commit Id]</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git reset --soft [commit Id]</li>
+        </ul> 
+    </div> <!-- div 1 -->
+
+    <div style="padding-top: 50px; width: 800px; padding-top: 50px; display: flex;"> <!-- div 2-->
+        <ul style="color: #FFA500;">
+            <label style="font-size: 20px;">BRANCH & MERGE</label>
+            <li style="color: white; font-size: 20px;" type="none">$ git branch</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git branch [branch-name]</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git checkout</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git merge [branch]</li>
+            <li style="color: white; font-size: 20px;" type="none">$ git log</li>
+        </ul> 
+
+        <ul style="color: #FFA500;">
+            <label style="font-size: 20px;">SHARE & UPDATE</label>
+            <li style="color: white; font-size: 20px;" type="none">$ git pull</li> 
+            <li style="color: white; font-size: 20px;" type="none">$ git push</li>
+        </ul>   
+    </div> <!-- div 2 -->
+
+    <div style="text-align: center; border-radius: 20px; margin: auto; color:black; font-size: 40px; position: sticky; top: 0; background-color: white; width: 400px;">When to use command</div>
+   
+    <div style="display: flex; margin-left: 100px;"> <!--display 1 -->
+        <div style="width: 500px; color: white; border: 1px solid white; border-radius: 10px; padding-left: 20px; margin-top: 50px;">
+            <label style="font-size: 20px; color: #FFA500;">SETUP & INIT</label>
+            <p style="color: white; margin: 0;">Configuring user information, initializing and cloning repositories</p>
+            <h2 style="margin-bottom: 0;">$ git init</h2>
+            <p style="font-size: 20px; margin: 0;">initialize an existing directory as a Git repository</p>
+            <h2 style="margin-bottom: 0;">$ git clone [url]</h2>
+            <p style="font-size: 20px; margin: 0;">retrieve an entire repository from a hosted location via URL</p>
+        </div>
+
+        <div style="width: 500px; color: white; border: 1px solid white; border-radius: 10px; padding-left: 20px; padding-right: 80px; margin-top: 50px; margin-left: 20px;">
+            <label style="font-size: 20px; color: #FFA500;">STAGE & SNAPSHOT</label>
+            <p style="color: white; margin: 0;">Working with snapshots and the Git staging area</p>
+            <h2 style="margin-bottom: 0;">$ git status</h2>
+            <p style="font-size: 20px; margin: 0;">show modified files in working directory, staged for your next commit</p>
+            <h2 style="margin-bottom: 0;">$ git add [file]</h2>
+            <p style="font-size: 20px; margin: 0;">add a file as it looks now to your next commit (stage)</p>
+            <h2 style="margin-bottom: 0;">$ git commit -m “[commit message]”</h2>
+            <p style="font-size: 20px; margin: 0;">commit your staged content as a new commit snapshot</p>
+        </div>
+    </div> <!-- dispaly 1 -->
+
+    <div style="display: flex; margin-left: 100px;">  <!-- dispaly 2 -->
+        <div style="width: 500px; color: white; border: 1px solid white; border-radius: 10px; padding-left: 20px; margin-top: 50px;">
+            <label style="font-size: 20px; color: #FFA500;">BRANCH & MERGE</label>
+            <p style="color: white; margin: 0;">Isolating work in branches, changing context, and integrating changes</p>
+            <h2 style="margin-bottom: 0;">$ git branch</h2>
+            <p style="font-size: 20px; margin: 0;">list your branches. a * will appear next to the currently active branch</p>
+            <h2 style="margin-bottom: 0;">$ git branch [branch-name]</h2>
+            <p style="font-size: 20px; margin: 0;">create a new branch at the current commit</p>
+            <h2 style="margin-bottom: 0;">$ git checkout</h2>
+            <p style="font-size: 20px; margin: 0;">switch to another branch and check it out into your working directory</p>
+            <h2 style="margin-bottom: 0;">$ git merge [branch]</h2>
+            <p style="font-size: 20px; margin: 0;">merge the specified branch's hstory into the current one</p>
+            <h2 style="margin-bottom: 0;">$ git log</h2>
+            <p style="font-size: 20px; margin: 0;">show all commits in the current branch's history</p>
+        </div>
+    <div style="width: 500px; color: white; border: 1px solid white; border-radius: 10px; padding-left: 20px; padding-right: 80px; margin-top: 50px; margin-left: 20px;">
+        <label style="font-size: 20px; color: #FFA500;">SHARE & UPDATE</label>
+            <p style="color: white; margin: 0;">Retrieving updates from another repository and updating local repos</p>
+            <h2 style="margin-bottom: 0;">$ git push</h2>
+            <p style="font-size: 20px; margin: 0;">Transmit local branch commits to the remote repository branch</p>
+            <h2 style="margin-bottom: 0;">$ git pull</h2>
+            <p style="font-size: 20px; margin: 0;">fetch and merge any commits from the tracking remote branch</p>  
+        </div>
+    </div> <!-- dispaly 2 -->
+
+    <div style="display: flex; margin-left: 100px;">  <!-- dispaly 3 -->
+        <div style="width: 500px; color: white; border: 1px solid white; border-radius: 10px; padding-left: 20px; padding-right: 80px; margin-top: 50px; margin-left: 20px;">
+            <label style="font-size: 20px; color: #FFA500;">REWRITE HISTORY</label>
+            <p style="color: white; margin: 0;">Rewriting branches, updating commits and clearing history</p>
+            <h2 style="margin-bottom: 0;">$ git reset --hard [commit Id]</h2>
+            <p style="font-size: 20px; margin: 0;">clear staging area, rewrite working tree from specified commit</p>
+            <h2 style="margin-bottom: 0;">$ git reset --soft [commit Id]</h2>
+            <p style="font-size: 20px; margin: 0;">clear commit history and keep index and filesystem as same.</p>  
+        </div>
+    </div> <!-- dispaly 3 -->
+
+</div>
+</body>
+</html>
+
+
+
+
